@@ -39,12 +39,14 @@ client.on('guildMemberAdd', async function(member) {
 })
 
 client.on('guildMemberRemove', async function(member) {
+    const members = Number(member.guild.memberCount)
+    const members1 = members - 8
     const welcome = client.channels.cache.get('861973194947690507')
     const embed = new Discord.MessageEmbed
     embed.setThumbnail(member.user.avatarURL())
     embed.setColor('#97CDFF')
     embed.setTitle(`Goodbye`)
-    embed.setDescription(`We hope you enjoy your stay ${member}. We'll miss you \n Hope you come back again.`)
+    embed.setDescription(`We hope you enjoy your stay ${member}. We'll miss you \n Hope you come back again. \n\n We now have ${members1} in our server`)
     welcome.send(embed)
 })
 
