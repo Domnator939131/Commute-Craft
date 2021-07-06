@@ -34,7 +34,7 @@ client.on('guildMemberAdd', async function(member) {
     embed.setTitle(`Welcome to Commute-Craft's Discord server`)
     embed.setThumbnail(member.user.avatarURL())
     embed.setColor('#97CDFF')
-    embed.setDescription(`${member} we are enjoyed to see you here \n\n Make sure to read all the rules in <#861953148352069692> and follow them to have a fun time here \n\n Check out <#861949835161370654> and <#861952333076234300> to start playing on the smp \n\n`)
+    embed.setDescription(`${member} we are enjoyed to see you here \n\n Make sure to read all the rules in <#861953148352069692> and follow them to have a fun time here \n\n Check out <#861949835161370654> and <#861952333076234300> to start playing on the smp \n\n Post your game highlights in <#861956704778584125 or chat with other fellow minecrafters in <#861964367267889176>`)
     welcome.send(embed)
 })
 
