@@ -9,21 +9,21 @@ client.on('ready', async () => {
     console.log(`${client.guilds.cache.size} guilds are gonne be amazed`)
  
     setInterval(() => {
-        client.user.setActivity(`${client.guilds.cache.size} Servers | !help`, { type: 'WATCHING' })
+        client.user.setActivity(`${client.guilds.cache.size} Server | c!help`, { type: 'WATCHING' })
     }, 60000); 
     
 })
 
 client.on('message', async message => {
-    if(message.content === '!help') {
+    if(message.content === 'c!help') {
         message.channel.send('Help command hasn\'t been created yet')
     }
 
-    if(message.content === '!simjoin') {
+    if(message.content === 'c!simjoin') {
         client.emit('guildMemberAdd', message.member)
     }
 
-    if(message.content === '!simleave') {
+    if(message.content === 'c!simleave') {
         client.emit('guildMemberRemove', message.member)
     }
 })
@@ -34,7 +34,7 @@ client.on('guildMemberAdd', async function(member) {
     embed.setTitle(`Welcome to Commute-Craft's Discord server`)
     embed.setThumbnail(member.user.avatarURL())
     embed.setColor('#97CDFF')
-    embed.setDescription(`${member} we are enjoyed to see you here \n\n Make sure to read all the rules in <#861953148352069692> and follow them to have a fun time here \n\n Check out <#860588638340513904> to get some roles`)
+    embed.setDescription(`${member} we are enjoyed to see you here \n\n Make sure to read all the rules in <#861953148352069692> and follow them to have a fun time here \n\n Check out <#861949835161370654> and <#861952333076234300> to start playing on the smp \n\n`)
     welcome.send(embed)
 })
 
