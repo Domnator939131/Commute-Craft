@@ -29,7 +29,7 @@ client.on('message', async message => {
 })
 
 client.on('guildMemberAdd', async function(member) {
-    const welcome = client.channels.cache.get('860576517615910943')
+    const welcome = client.channels.cache.get('861956764819128340')
     const embed = new Discord.MessageEmbed
     embed.setTitle(`Welcome to Commute-Craft's Discord server`)
     embed.setThumbnail(member.user.avatarURL())
@@ -39,7 +39,7 @@ client.on('guildMemberAdd', async function(member) {
 })
 
 client.on('guildMemberRemove', async function(member) {
-    const welcome = client.channels.cache.get('860576551145570364')
+    const welcome = client.channels.cache.get('861973194947690507')
     const embed = new Discord.MessageEmbed
     embed.setThumbnail(member.user.avatarURL())
     embed.setColor('#97CDFF')
